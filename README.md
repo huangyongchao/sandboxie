@@ -1,2 +1,2 @@
-# springboot-rest-api-demo
-Sample showing REST API implementation using Spring Boot and MongoDB as the backend
+# springboot-rest-jpa-freemarker demo
+简单的增删改查
