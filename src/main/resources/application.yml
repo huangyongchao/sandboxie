@@ -1,0 +1,16 @@
+server:
+  display-name: sandboxie
+  port: 8090
+spring:
+  freemarker:
+    cache: false
+
+  datasource:
+    dbcp2:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://172.16.18.119:3306/yiqifa_bs
+      username: yiqifatest
+      password: yiqifatest
+  jpa:
+    database: mysql
+    show-sql: true
