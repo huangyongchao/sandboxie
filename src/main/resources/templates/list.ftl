@@ -13,7 +13,7 @@
     *添加接口域名 映射到沙盒服务器</br>
 </p>
 <p>
-    <a href="http://localhost:8090/app/create"><b>新增</b></a>
+    <a href="http://172.16.18.197:8090/app/create"><b>新增</b></a>
 </p>
 <table width="800"  align="left">
     <tr align="left">
@@ -30,7 +30,7 @@
         <td>${obj.path}</td>
         <td><textarea cols="80" rows="5" >${obj.returndata}</textarea></td>
 
-        <td><a href="http://localhost:8090/app/delete/${obj.id}">删除</a></td>
+        <td><a href="http://172.16.18.197:8090/app/delete/${obj.id}">删除</a></td>
     </tr>
 </#list>
 

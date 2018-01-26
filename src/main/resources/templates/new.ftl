@@ -7,7 +7,7 @@
 
 <body>
 
-<form name="new" method="POST" action="http://localhost:8090/app/save" >
+<form name="new" method="POST" action="http://172.16.18.197:8090/app/save" >
     <p>
         <label for="path">路径</label>
     </p>
