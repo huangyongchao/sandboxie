@@ -14,50 +14,50 @@ import javax.servlet.http.HttpServletRequest;
 
 @RestController
 @RequestMapping("/")
-public class SandboxieRest {
+public class SandboxieRestPost {
 
     @Autowired
     private SandboxieRepository sandboxieRepository;
 
 
-    @RequestMapping(value="/{path}",method = RequestMethod.GET)
+    @RequestMapping(value="/{path}",method = RequestMethod.POST)
     public JSONObject getData(HttpServletRequest request) {
 
 
         return getJsonData(request);
     }
 
-    @RequestMapping(value="/{path}/{path}",method = RequestMethod.GET)
+    @RequestMapping(value="/{path}/{path}",method = RequestMethod.POST)
     public JSONObject getData1(HttpServletRequest request) {
 
         return getJsonData(request);
 
     }
-    @RequestMapping(value="/{path}/{path}/{path}",method = RequestMethod.GET)
+    @RequestMapping(value="/{path}/{path}/{path}",method = RequestMethod.POST)
     public JSONObject getData2(HttpServletRequest request) {
 
         return getJsonData(request);
 
     }
-    @RequestMapping(value="/{path}/{path}/{path}/{path}",method = RequestMethod.GET)
+    @RequestMapping(value="/{path}/{path}/{path}/{path}",method = RequestMethod.POST)
     public JSONObject getData3(HttpServletRequest request) {
 
         return getJsonData(request);
 
     }
-    @RequestMapping(value="/{path}/{path}/{path}/{path}/{path}",method = RequestMethod.GET)
+    @RequestMapping(value="/{path}/{path}/{path}/{path}/{path}",method = RequestMethod.POST)
     public JSONObject getData4(HttpServletRequest request) {
 
         return getJsonData(request);
 
     }
-    @RequestMapping(value="/{path}/{path}/{path}/{path}/{path}/{path}",method = RequestMethod.GET)
+    @RequestMapping(value="/{path}/{path}/{path}/{path}/{path}/{path}",method = RequestMethod.POST)
     public JSONObject getData5(HttpServletRequest request) {
 
         return getJsonData(request);
 
     }
-    @RequestMapping(value="/{path}/{path}/{path}/{path}/{path}/{path}/{path}",method = RequestMethod.GET)
+    @RequestMapping(value="/{path}/{path}/{path}/{path}/{path}/{path}/{path}",method = RequestMethod.POST)
     public JSONObject getData6(HttpServletRequest request) {
 
 

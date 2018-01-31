@@ -14,7 +14,7 @@ import java.util.*;
 
 
 @Controller
-@RequestMapping("/app")
+@RequestMapping("/sandbox")
 public class SandboxieController {
 
 
