@@ -10,7 +10,11 @@
     <h2>沙盒模拟API配置(路径&返回JSON数据)</h2>
     *修改服务器上的host</br>
     *vi /etc/hosts</br>
-    *添加接口域名 映射到沙盒服务器</br>
+    *添加接口域名 映射到沙盒服务器 例如</br>
+172.16.18.197 api.jd.com </br>
+172.16.18.197 japi.jingtuitui.com </br>
+172.16.18.197 open.suning.com </br>
+172.16.18.197 sapi.beibei.com </br>
 </p>
 <p>
     <a href="http://127.0.0.1:8090/sandbox/create"><b>新增</b></a>

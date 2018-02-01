@@ -1,5 +1,6 @@
 package app.interceptor;
 
+import app.constant.AppConstants;
 import app.repository.SandboxieRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -19,10 +20,10 @@ public class PathInterceptor implements HandlerInterceptor {
     public boolean preHandle(HttpServletRequest req, HttpServletResponse response, Object o) throws Exception {
         String url = req.getRequestURI();
         System.out.println(req.getRequestURL());
-        if(url.indexOf("/sandbox")==-1 && url.indexOf("/restsandbox")==-1 ){
+        if( url.indexOf(AppConstants.APP_REST_PATH)==-1&&url.indexOf(AppConstants.APP_CTX_PATH)==-1  ){
             req.setAttribute("p",url);
 
-            req.getRequestDispatcher("/restsandbox/").forward(req,response);
+            req.getRequestDispatcher(AppConstants.APP_REST_PATH).forward(req,response);
             return false;
 
         }else{

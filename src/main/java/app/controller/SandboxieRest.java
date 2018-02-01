@@ -13,57 +13,26 @@ import javax.servlet.http.HttpServletRequest;
 
 
 @RestController
-@RequestMapping("/")
 public class SandboxieRest {
 
     @Autowired
     private SandboxieRepository sandboxieRepository;
 
 
-    @RequestMapping(value="/{path}",method = RequestMethod.GET)
+    @RequestMapping(value="/**",method = RequestMethod.GET)
     public JSONObject getData(HttpServletRequest request) {
 
 
         return getJsonData(request);
     }
 
-    @RequestMapping(value="/{path}/{path}",method = RequestMethod.GET)
+    @RequestMapping(value="/**",method = RequestMethod.POST)
     public JSONObject getData1(HttpServletRequest request) {
 
         return getJsonData(request);
 
     }
-    @RequestMapping(value="/{path}/{path}/{path}",method = RequestMethod.GET)
-    public JSONObject getData2(HttpServletRequest request) {
 
-        return getJsonData(request);
-
-    }
-    @RequestMapping(value="/{path}/{path}/{path}/{path}",method = RequestMethod.GET)
-    public JSONObject getData3(HttpServletRequest request) {
-
-        return getJsonData(request);
-
-    }
-    @RequestMapping(value="/{path}/{path}/{path}/{path}/{path}",method = RequestMethod.GET)
-    public JSONObject getData4(HttpServletRequest request) {
-
-        return getJsonData(request);
-
-    }
-    @RequestMapping(value="/{path}/{path}/{path}/{path}/{path}/{path}",method = RequestMethod.GET)
-    public JSONObject getData5(HttpServletRequest request) {
-
-        return getJsonData(request);
-
-    }
-    @RequestMapping(value="/{path}/{path}/{path}/{path}/{path}/{path}/{path}",method = RequestMethod.GET)
-    public JSONObject getData6(HttpServletRequest request) {
-
-
-        return getJsonData(request);
-
-    }
 
     private JSONObject getJsonData(HttpServletRequest request){
         Sandboxie sandboxie  = new Sandboxie();

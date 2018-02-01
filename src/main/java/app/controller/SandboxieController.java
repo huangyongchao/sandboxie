@@ -1,5 +1,6 @@
 package app.controller;
 
+import app.constant.AppConstants;
 import app.model.Sandboxie;
 import app.repository.SandboxieRepository;
 import com.alibaba.fastjson.JSON;
@@ -14,7 +15,7 @@ import java.util.*;
 
 
 @Controller
-@RequestMapping("/sandbox")
+@RequestMapping(AppConstants.APP_CTX_PATH)
 public class SandboxieController {
 
 
